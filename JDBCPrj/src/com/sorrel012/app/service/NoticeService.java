@@ -19,14 +19,22 @@ public class NoticeService {
 	private String userId = "SORREL";
 	private String userPwd = "olian8982e";
 	
-	public List<Notice> getList() throws SQLException, ClassNotFoundException {
+	public List<Notice> getList(int page, String field, String query) throws SQLException, ClassNotFoundException {
 		
-		String sql = "SELECT * FROM NOTICE WHERE HIT >= 10";
+		int start = 1 + (page-1) * 3;
+		int end = 3 * page;
+		
+		String sql = "SELECT * FROM NOTICE_VIEW WHERE " + field + " LIKE ? AND NUM BETWEEN ? AND ?";
 
 		Class.forName(this.driver);
 		Connection con = DriverManager.getConnection(this.url, this.userId, this.userPwd);
-		Statement st = con.createStatement();
-		ResultSet rs = st.executeQuery(sql);
+		PreparedStatement st = con.prepareStatement(sql);
+		
+		st.setString(1, "%"+query+"%");
+		st.setInt(2, start);
+		st.setInt(3, end);
+		
+		ResultSet rs = st.executeQuery();
 		
 		List<Notice> list = new ArrayList<Notice>();
 		
@@ -48,6 +56,31 @@ public class NoticeService {
 		con.close();
 		
 		return list;
+	}
+
+	//Scalar
+	public int getCount() throws ClassNotFoundException, SQLException {
+		
+		int count = 0;
+		
+		String sql = "SELECT COUNT(ID) COUNT FROM NOTICE_VIEW";
+
+		Class.forName(this.driver);
+		Connection con = DriverManager.getConnection(this.url, this.userId, this.userPwd);
+		Statement st = con.createStatement();
+		ResultSet rs = st.executeQuery(sql);
+		
+		List<Notice> list = new ArrayList<Notice>();
+		
+		if(rs.next()) {
+			count = rs.getInt("COUNT");
+		}
+
+		rs.close();
+		st.close();
+		con.close();
+		
+		return count;
 	}
 
 	public int insert(Notice notice) throws ClassNotFoundException, SQLException {
@@ -117,4 +150,5 @@ public class NoticeService {
 		
 		return result;
 	}
+
 }
