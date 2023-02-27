@@ -1,20 +1,31 @@
 # ✏SQL, JDBC 공부
 
+<br/>
+
 ## 🖥eclipse(2021-03)
 ### https://www.eclipse.org/downloads/packages/release/2021-03/r 
+
+<br/>
 
 ## 🖥Oracle Database Express Edition (XE) Release 11.2.0.2.0 (11gR2)
 ### https://www.oracle.com/database/technologies/xe-prior-release-downloads.html
 
+<br/>
+
 ## 🖥SQL Developer 21.4.2
 ### https://www.oracle.com/database/sqldeveloper/technologies/download/
+
+<br/>
 
 ## 🖥JDBC Driver(ojdbc6)
 ### https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc6/11.2.0.4/
 
+<br/>
 
 ### ✔JDBC Driver 설정
 ![image](https://user-images.githubusercontent.com/115568532/221416577-8fdb7e0e-cfad-488b-a8e7-dec53431eee5.png)
+
+<br/>
 
 ### ✔JDBC 기본 코드
 - String url = "jdbc:oracle:thin:@localhost:1521/xe";
@@ -41,6 +52,8 @@
   - PreparedStatement st= con.prepareStatement(sql);
   - st.setString(?의 순서 - 1부터 시작, 넣을 데이터);
   - st.executeUpdate();
+
+<br/>
 
 ### ✔GIT
 - remote
