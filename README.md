@@ -12,7 +12,7 @@
 
 <br/>
 
-## 🖥SQL Developer 21.4.2
+## 🖥SQL Developer 21.4.2(Windows 64-bit with JDK 11 included)
 ### https://www.oracle.com/database/sqldeveloper/technologies/download/
 
 <br/>
