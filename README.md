@@ -17,6 +17,17 @@
 
 <br/>
 
+
+### ✔SQL Developer 설정
+![image](https://user-images.githubusercontent.com/115568532/224870890-0903c296-0238-476f-8934-e0c375ce66f3.png)
+- Name : localhost.system
+  - localhost > 오라클 컴퓨터 주소 (현재 컴퓨터)
+  - system > 로그인 계정명
+- 사용자 이름: system
+- 비밀번호: 오라클 설치 시 입력한 비밀번호
+
+<br/>
+
 ## 🖥JDBC Driver(ojdbc6)
 ### https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc6/11.2.0.4/
 
