@@ -28,6 +28,20 @@
 
 <br/>
 
+### ✔SQL Developer 사용자 생성 및 권한 부여
+
+#### 1. 사용자 생성
+![image](https://user-images.githubusercontent.com/115568532/227752174-916908ad-e416-4605-a172-82b905bf9ca0.png)
+![image](https://user-images.githubusercontent.com/115568532/227752245-caa9c69f-b339-4a92-8683-b927e550ec35.png)
+
+#### 2. 역할 부여
+![image](https://user-images.githubusercontent.com/115568532/227752266-d0497e5c-6e42-4ee2-98c6-e60e38174b9e.png)
+
+#### 3. 권한 부여
+![image](https://user-images.githubusercontent.com/115568532/227752294-3f44bcf5-cd96-4f4a-a0a9-423b845f45b2.png)
+
+<br>
+
 ## 🖥JDBC Driver(ojdbc6)
 ### https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc6/11.2.0.4/
 
