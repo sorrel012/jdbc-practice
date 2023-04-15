@@ -16,8 +16,8 @@ public class NoticeService {
 
 	private String url = "jdbc:oracle:thin:@localhost:1521/xe";
 	private String driver = "oracle.jdbc.driver.OracleDriver";
-	private String userId = "SORREL";
-	private String userPwd = "olian8982e";
+	private String userId = "sorrel";
+	private String userPwd = "1234";
 	
 	public List<Notice> getList(int page, String field, String query) throws SQLException, ClassNotFoundException {
 		
