@@ -1,23 +1,23 @@
 
-INSERT INTO NOTICE(ID, TITLE, WRITER_ID, CONTENT) VALUES(6, 'ÀüÈ­¹øÈ£·Î ¿¬¶ô ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù. 010-123-5678'
+INSERT INTO NOTICE(ID, TITLE, WRITER_ID, CONTENT) VALUES(6, 'ì „í™”ë²ˆí˜¸ë¡œ ì—°ë½ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤. 010-123-5678'
                                                                 , 'quest'
-                                                                , '¿¬¶ôÃ³¸¦ ³²±é´Ï´Ù.');
+                                                                , 'ì—°ë½ì²˜ë¥¼ ë‚¨ê¹ë‹ˆë‹¤.');
 
-INSERT INTO NOTICE(ID, TITLE, WRITER_ID, CONTENT) VALUES(7, '¼±¹Ý-Á¢½Ã-±×¸©'
+INSERT INTO NOTICE(ID, TITLE, WRITER_ID, CONTENT) VALUES(7, 'ì„ ë°˜-ì ‘ì‹œ-ê·¸ë¦‡'
                                                         , 'OKAY'
-                                                        , '½Ä±â ÁØºñ.');
+                                                        , 'ì‹ê¸° ì¤€ë¹„.');
 
-INSERT INTO NOTICE(ID, TITLE, WRITER_ID, CONTENT) VALUES(1, 'JDBC¶õ ¹«¾ùÀÎ°¡?'
-                                                        , 'sorrel', 'ÀÚ°í ½Í´Ù.');
+INSERT INTO NOTICE(ID, TITLE, WRITER_ID, CONTENT) VALUES(1, 'JDBCëž€ ë¬´ì—‡ì¸ê°€?'
+                                                        , 'sorrel', 'ìžê³  ì‹¶ë‹¤.');
                                                         
-INSERT INTO NOTICE(ID, TITLE, WRITER_ID, CONTENT) VALUES(4, '¹é¿£µå¿Í ÇÁ·ÐÆ®¿£µåÀÇ Â÷ÀÌÁ¡'
-                                                        , 'hanee', 'Àû¼º¿¡ ¹¹°¡ ¸ÂÁö?');
+INSERT INTO NOTICE(ID, TITLE, WRITER_ID, CONTENT) VALUES(4, 'ë°±ì—”ë“œì™€ í”„ë¡ íŠ¸ì—”ë“œì˜ ì°¨ì´ì '
+                                                        , 'hanee', 'ì ì„±ì— ë­ê°€ ë§žì§€?');
                                                         
 INSERT INTO NOTICE(ID, TITLE, WRITER_ID, CONTENT) VALUES(2, 'Array'
-                                                        , 'jiyou', '´ÙÂ÷¿ø ¹è¿­ Ãâ·Â');                                                     
+                                                        , 'jiyou', 'ë‹¤ì°¨ì› ë°°ì—´ ì¶œë ¥');                                                     
 
-INSERT INTO NOTICE(ID, TITLE, WRITER_ID, CONTENT) VALUES(3, 'È¿À²ÀûÀ¸·Î ¿µ¾î °øºÎÇÏ±â'
-                                                        , 'eng', '¿µ¾î °øºÎ ¹æ¹ý');
+INSERT INTO NOTICE(ID, TITLE, WRITER_ID, CONTENT) VALUES(3, 'íš¨ìœ¨ì ìœ¼ë¡œ ì˜ì–´ ê³µë¶€í•˜ê¸°'
+                                                        , 'eng', 'ì˜ì–´ ê³µë¶€ ë°©ë²•');
                                                         
 DELETE NOTICE  WHERE HIT IN (1, 9, 12);
 
@@ -32,4 +32,5 @@ SELECT * FROM MEMBER;
 UPDATE MEMBER SET EMAIL = 'sorrel012@gmail.com' WHERE ID='sorrel';
 
 SELECT ID, PWD, NAME, EMAIL FROM MEMBER WHERE REGEXP_LIKE(EMAIL , '\D\w*@\D\w*.(org|net|com)');
+
 
