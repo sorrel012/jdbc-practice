@@ -2,6 +2,11 @@
 
 <br/>
 
+## 📄 공부 내용 정리
+### <a href='https://sorrel012.tistory.com/category/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%28DB%29/JDBC'>블로그</a>
+
+<br/>
+
 ## 🖥eclipse(2021-03)
 ### https://www.eclipse.org/downloads/packages/release/2021-03/r 
 
